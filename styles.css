@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F26B0F;
+    color: #333;
+}
+
+.container {
+    padding: 30px;
+    background-color: #FCC737;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.amount label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    height: 3rem;
+    padding-left: 0.75rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #555;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropdown .from, 
+.dropdown .to {
+    text-align: center;
+}
+
+.dropdown p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    gap: 10px;
+    transition: border 0.3s ease;
+}
+
+.select-container:hover {
+    border-color: #555;
+}
+
+.select-container select {
+    border: none;
+    font-size: 1rem;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.select-container img {
+    max-width: 2rem;
+}
+
+.fa-arrow-right-arrow-left {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.msg {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.msg:hover {
+    background-color: #f9f9f9;
+    border-color: #555;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
