@@ -39,7 +39,7 @@ bnt.addEventListener('click', async (evt) => {
     const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
     let responce = await fetch(URL);
     let data = await responce.json();
-    let rate = data[fromCurr.value.toLowerCase()].inr;
+    let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
     let result = `${amtVal} ${fromCurr.value} = ${Math.round(amtVal * rate * 100) / 100} ${toCurr.value}`;
     msg.innerText = result;
 }) 
